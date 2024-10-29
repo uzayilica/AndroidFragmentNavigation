@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".YemekFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:src="@drawable/food"/>
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yemek Sayfasına Hoşgeldiniz" />
+
+    <Button
+        android:id="@+id/btnWelcomeDon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome Sayfasına Gidelim" />
+
+
+
+
+</LinearLayout>

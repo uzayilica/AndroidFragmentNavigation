@@ -33,7 +33,7 @@ class SignupFragment : Fragment() {
         // Login durumunu gözlemle
         viewModel.isLoggedIn.observe(viewLifecycleOwner) { isLoggedIn ->
             if (isLoggedIn) {
-                findNavController().navigate(R.id.action_loginFragment_to_profilFragment)
+                findNavController().navigate(R.id.action_signupFragment_to_yemekFragment)
             }
         }
 
@@ -52,7 +52,7 @@ class SignupFragment : Fragment() {
             val username = binding.edittextUsername.text.toString()
             // Email ve şifre kontrolü
             if (email.isEmpty() || password.isEmpty()) {
-                Toast.makeText(requireContext(), "Lütfen tüm alanları doldurun", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Lütfen tüm aleanları doldurun", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
             // ViewModel'deki login fonksiyonunu çağır
